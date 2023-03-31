@@ -1,4 +1,8 @@
-
+/* CUSTOM PROPS */
+:root {
+  --header-text-color: #000;
+  --text-color: #333;
+}
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -7,7 +11,7 @@ html {
 }
 
 *:focus {
-  outline: 2px dotted orchid;
+  outline: 2px dotted #0a775f;
   outline-offset: 2px;
 }
 
@@ -23,11 +27,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.75;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 
 img {
