@@ -2,6 +2,8 @@
 :root {
   --text-color: #333;
   --accent-color: #0a775f;
+  --accent-color-brown: #c99b67;
+  --light-brown: #f3d7b7;
 }
 /* GLOBAL */
 html {
@@ -11,7 +13,7 @@ html {
 }
 
 *:focus {
-  outline: 2px dotted var(--accent-color);
+  outline: 3px dotted var(--accent-color);
   outline-offset: 2px;
 }
 
@@ -40,6 +42,44 @@ img {
 }
 
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 16px 24px;
+  margin-top: 0;
+  border: 0;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-green {
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+.button-green:hover {
+  opacity: 0.8;
+}
+.button-green:active {
+  opacity: 0.7;
+}
+
+.button-orange {
+  color: #fff;
+  background-color: var(--accent-color-brown);
+}
+
+.button-orange:hover {
+  opacity: 0.8;
+}
+.button-orange:active {
+  opacity: 0.7;
+}
 /* CONTAINER */
 .container {
   width: 100%;
@@ -59,7 +99,7 @@ img {
 /* HEADER-HERO */
 
 .site-header-hero-wrapper {
-
+  background-color: var(--light-brown);
   background-image: url("../img/header-bg.jpg");
 }
 
@@ -78,6 +118,7 @@ img {
 
 .site-header-logo-link {
   display: flex;
+  flex-shrink: 0;
   text-decoration: none;
 }
 
@@ -111,6 +152,7 @@ img {
   color: var(--text-color);
   text-transform: uppercase;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .sitenav-item-link:hover {
@@ -122,6 +164,50 @@ img {
 }
 
 
+/* HERO */
+.hero {
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.hero-info-wrapper {
+  width: 100%;
+  max-width: 730px;
+  padding: 116px 150px 116px 100px;
+}
+
+.hero-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 64px;
+  line-height: normal;
+  color: #000;
+}
+
+.hero-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero-text:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.hero-img {
+  width: 710px;
+  height: 596px;
+  object-fit: cover;
+}
+
+.hero-img-index {
+  height: 696px;
+}
 
 
 
