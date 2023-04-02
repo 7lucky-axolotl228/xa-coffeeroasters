@@ -1,6 +1,7 @@
 /* CUSTOM PROPS */
 :root {
   --text-color: #333;
+  --text-color-white: #fff;
   --accent-color: #0a775f;
   --accent-color-brown: #c99b67;
   --light-brown: #f3d7b7;
@@ -211,6 +212,9 @@ img {
 
 
 /* MAIN-COLLECTION */
+.index-collection {
+  margin-bottom: 20px;
+}
 .collection-inner {
   background-color: var(--light-bg);
   background-image: url("../img/light-bg.jpg");
@@ -279,6 +283,84 @@ img {
 }
 
 
+/* INDEX-FEATURES */
+.index-features {
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.index-features-inner {
+  height: 700px;
+  background-color: var(--accent-color-brown);
+  background-image: url("../img/brown-bg.jpg");
+  background-size: 100% 700px;
+  background-repeat: no-repeat;
+}
+
+.index-features-heading {
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 50px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--text-color-white);
+}
+
+.index-features-lead {
+  text-align: center;
+  max-width: 580px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 28px;
+  color: var(--text-color-white);
+}
+
+.index-features-list {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.index-features-item {
+  flex-direction: column;
+  width: 435px;
+  margin-bottom: 80px;
+  list-style: none;
+}
+.index-features-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.index-features-img {
+  display: flex;
+  width: 433px;
+  height: 500px;
+  margin-bottom: 28px;
+}
+
+.index-features-item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: var(--text-color);
+}
+
+.index-features-item-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+
+
+
 
 
 
@@ -296,7 +378,12 @@ only screen and (                min-resolution: 2dppx) {
   .site-header-hero-wrapper {
     background-image: url("../img/header-bg@2x.jpg");
   }
+
   .collection-inner {
     background-image: url("../img/light-bg@2x.jpg");
+  }
+
+  .index-features-inner {
+    background-image: url("../img/brown-bg@2x.jpg");
   }
 }
