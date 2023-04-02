@@ -285,7 +285,7 @@ img {
 
 /* INDEX-FEATURES */
 .index-features {
-  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .index-features-inner {
@@ -356,9 +356,91 @@ img {
   line-height: 28px;
 }
 
+/* HOW IT WORKS */
+.how-it-works-inner {
+  padding: 50px 30px;
+  background-color: var(--accent-color);
+  background-image: url("../img/green-bg.jpg");
+  text-align: center;
+}
 
+.how-it-works-heading {
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 50px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color-white);
+}
 
+.how-it-works-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: left;
+  margin-left: -20px;
+  list-style: none;
+  counter-reset: how-it-works;
+}
 
+.how-it-works-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+  counter-increment: how-it-works;
+}
+
+.how-it-works-item:before {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  border: 4px solid var(--accent-color-brown);
+  background-color: var(--light-bg);
+  content: "";
+}
+
+.how-it-works-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 40px 20px;
+  background-color: var(--light-bg);
+}
+
+.how-it-works-info::before {
+  content: "0"counter(how-it-works);
+  margin-bottom: 45px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: normal;
+  text-align: right;
+  color: var(--text-color);
+}
+
+.how-it-works-item-step-title {
+  max-width: 250px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.how-it-works-item-step-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+
+.how-it-works-cta:focus {
+  outline-color: var(--accent-color-brown);
+}
 
 
 
@@ -384,5 +466,9 @@ only screen and (                min-resolution: 2dppx) {
 
   .index-features-inner {
     background-image: url("../img/brown-bg@2x.jpg");
+  }
+
+  .how-it-works-inner {
+    background-image: url("../img/green-@2x.jpg");
   }
 }
